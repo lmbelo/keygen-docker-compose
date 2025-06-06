@@ -2,7 +2,7 @@ import requests
 from requests.auth import HTTPBasicAuth
 
 KEYGEN_BASE_URL = "https://api.keygen.localhost/v1"
-ADMIN_EMAIL = "lucas.belo@live.com"
+ADMIN_EMAIL = "user@user.com"
 ADMIN_PASSWORD = "123"
 CA_BUNDLE_PATH = "./certificates/authorities/local/my_local_ca_bundle.pem"
 
