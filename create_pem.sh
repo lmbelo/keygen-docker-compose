@@ -1,0 +1,1 @@
+cat root.crt intermediate.crt > my_local_ca_bundle.pem

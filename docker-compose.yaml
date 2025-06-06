@@ -15,7 +15,7 @@ services:
         type: bind
 
   setup:
-    image: keygen/api:latest
+    image: keygen/api:v1.3.0
     environment:
       DATABASE_URL: "postgres://postgres:postgres@postgres:5432/keygen"
       DISABLE_DATABASE_ENVIRONMENT_CHECK: 1
@@ -47,7 +47,7 @@ services:
       - redis:/data
 
   web:
-    image: keygen/api:latest
+    image: keygen/api:v1.3.0
     ports:
       - "3000:3000"
     command: "web"
@@ -69,7 +69,7 @@ services:
       - redis
 
   worker:
-    image: keygen/api:latest
+    image: keygen/api:v1.3.0
     command: "worker"
     environment:
       DATABASE_URL: "postgres://postgres:postgres@postgres:5432/keygen"
